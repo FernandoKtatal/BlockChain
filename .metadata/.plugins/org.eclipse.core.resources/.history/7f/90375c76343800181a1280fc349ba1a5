@@ -1,0 +1,20 @@
+package noobchain;
+import java.security.*;
+
+public class StringUtil {
+	public static String applaySHA256(String input) {
+		try {
+			MessageDigest digest = new MessageDigest().getInstance("SHA-256");
+			byte[] hash = digest.digest(input.getBytes("UTF-8"));
+			StringBuffer haxString = new StringBuffer();
+			
+			for(int i : hash.length()) {
+				
+			}
+			
+			
+		}
+		return input;
+		
+	}
+}

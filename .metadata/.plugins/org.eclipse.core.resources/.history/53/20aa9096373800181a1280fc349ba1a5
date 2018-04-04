@@ -1,0 +1,9 @@
+package noobchain;
+
+public class NoobChain {
+	public static void main(String[] args) {
+		Block genesis = new Block("the first block here", "0");
+		System.out.println("Hash do bloco 1: " + genesis.hashCode());
+	}
+
+}

@@ -1,0 +1,23 @@
+package noobchain;
+
+import java.util.Date;
+
+public class Block {
+	private String hash;
+	private String data;
+	private String previoushash;
+	private long time;
+	
+	
+	public Block(String data, String previoushash) {
+		this.data = data;
+		this.previoushash = previoushash;
+		this.time = new Date().getTime();
+		this.hash = CalcHash();
+	}
+
+	public String CalcHash() {
+		String calchash = StringUtil.applaySHA256(previoushash + data + Long.toString(time));
+		return calchash;
+	}
+}
