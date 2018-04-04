@@ -25,13 +25,13 @@ public class NoobChain {
 		System.out.println(blockchainJson);
 		
 //		Block genesis = new Block("the first block here", "0");
-//		System.out.println("Hash do bloco 1: " + genesis.CalcHash());
+//		System.out.println("Hash do bloco 1: " + genesis.hash);
 //		
-//		Block second = new Block("Yo Im the second block mothafuca", genesis.CalcHash());
-//		System.out.println("Hash do bloco 2: "+ second.CalcHash());
+//		Block second = new Block("Yo Im the second block mothafuca", genesis.hash);
+//		System.out.println("Hash do bloco 2: "+ second.hash);
 //		
-//		Block third = new Block("Finally the third block bitch", second.CalcHash());
-//		System.out.println("Hash do bloco 3: " + second.CalcHash());
+//		Block third = new Block("Finally the third block bitch", second.hash);
+//		System.out.println("Hash do bloco 3: " + second.hash);
 	}
 	
 	public static Boolean isChainValid() {
